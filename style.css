@@ -1,0 +1,328 @@
+#onlinecount{
+    line-height: 36px;
+    text-align: center;
+}
+.title{
+    text-align:left;
+    margin-left:10px;
+    line-height: 36px;
+    
+}
+.user div ,.service div{
+    float: left;
+
+}
+
+/*公共样式*/
+*{padding:0; margin:0;}
+html,body{width:100%;height: 100%;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*zoom:1}
+.cred{color:#f03e3e;}
+.cgreen{color:#459d36;}
+.hide{display:none;}
+.fr{float: right;}
+.fl{float: left;}
+.rela{position: relative;}
+.abs{position:absolute;}
+*{font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;}
+
+/*登录界面*/
+.login-wrap{
+    background:#FFFFFF;
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+.login-con{
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    width: 48%;
+}
+
+
+.input-lg {
+    background: transparent;
+    border: none;
+    bottom: 0;
+    box-sizing: border-box;
+    left: 0;
+    margin: 0;
+    outline: none;
+    padding: 0 8px;
+    top: 2px;
+    width: 70%;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    height: 44px;
+    outline: none;
+    transition: box-shadow 200ms cubic-bezier(0.4,0.0,0.2,1);
+    }
+    .btn-lg {
+        padding: 10px 16px;
+        font-size: 18px;
+        line-height: 1.3333333;
+        border-radius: 6px;
+    }
+    .btn-info {
+        color: #fff;
+        background-color: #5bc0de;
+        border-color: #46b8da;
+    }
+    .btn {
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+    .logo_title{margin-bottom: 20px;}
+/*聊天界面*/
+
+
+/*聊天室顶栏*/
+header {
+    display: block;
+    position: fixed; 
+    z-index: 100; 
+    width: 100%; 
+    height: 45px; 
+    font-size: 20px; 
+    line-height: 45px; 
+    opacity: 0.8;
+}
+
+.to-new-message{
+    margin-bottom:50px;
+    position: fixed;
+    left: 50%;
+    bottom: 0px;
+    width: 200px;
+    height: 6%;
+    background: rgba(255, 255, 255, 0);
+}
+
+.emoji {
+    width: 100px;
+    height: 100px;
+}
+
+#emojiWrapper {
+    border-radius: 5px;
+    display: none;
+    width: 100vw;
+    bottom: 50px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px #555;
+    display: block;
+    position: absolute;
+    z-index: 10;
+    width: 500px;
+    height: 300px;
+    left: 10px;
+    top: 100px;
+    padding: 10px;
+    overflow: scroll;
+}
+#emojiWrapper span{
+    cursor: pointer;
+}
+#emojiWrapper img {
+    margin: 2px;
+    padding: 2px;
+    width: 35px;
+    height: 35px;
+}
+#emojiWrapper img:hover {
+    background-color: rgba(31, 180, 226, 0.815);
+}
+
+#headportrait {
+    border-radius: 5px;
+    display: none;
+    width: 100%;
+    position: absolute;
+    background-color: #28a6a499;
+    box-shadow: 0 0 10px #555;
+    z-index: 10;
+}
+#headportrait img {
+    margin: 2px;
+    padding: 2px;
+    width: 60px;
+    height: 60px;
+}
+#headportrait img:hover {
+    background-color: rgba(31, 180, 226, 0.815);
+}
+.showHeadprotrait {
+    position: relative;
+    width: 100%;
+}
+.showHeadprotrait p{
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+}
+#defaultHead {
+    margin-top: 5%;
+    width: 20%;
+    height: 20%;
+    border-radius: 10px;
+}
+
+.items {
+    height: 30px;
+}
+
+#sendtxt {
+    float: left;
+    width: 45%;
+}
+
+/*表情按钮*/
+#emoji {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    bottom: 80px;
+    z-index: 9;
+    left: 11px;
+    cursor: pointer;
+}
+#emoji img{
+    width: 100%;
+    height: 100%;
+}
+/*图片按钮*/
+#fake {
+    position: absolute;
+    line-height: 100%;
+    width: 14.5%;
+    height: 100%;
+}
+#sendImage {
+    float: right;
+    width: 100%;
+    opacity: 0;
+}
+.adapt-sendImage {
+    padding: 0;
+    float: right;
+    width: 15%;
+    margin-right: 0.5%;
+}
+footer {
+    overflow: hidden;
+    padding-right: 5px;
+}
+
+
+.name{
+    margin-left: 20px;
+    color: #a19595;
+    font-size: 12px;
+}
+.section{
+    line-height: 36px;
+}
+*{
+    padding: 0;margin: 0;
+}
+
+#content{
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    outline: none;
+    transition: box-shadow 200ms cubic-bezier(0.4,0.0,0.2,1);
+    width: 500px;
+    display: block;
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    text-align: left;
+    padding: 10px;
+    display: table-cell; 
+    text-align: left;
+ 
+    
+}
+section{margin-left: 10px;margin-bottom: 10px;}
+#TZA4S {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+/*
+对话框
+*/
+.comment {
+    height: 35px;
+    position: relative;
+    background: #73d875;
+    border-radius: 5px;
+    padding: 0 10px;
+    line-height: 35px;
+  }
+
+  .comment:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 5px;
+    right: -16px;
+    border: solid 8px;
+    border-color: transparent transparent transparent #73d875;
+    font-size: 0;
+  }
+  .photo{
+      width: 35px;
+      height: 40px;
+  }
+  /*表情包*/
+  .js-emoji-char{
+    width: auto;
+    padding: 8px;
+    position: relative;
+  }
+  .service .name{
+    float: left;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .service .comment{
+    background: #eeee;
+  }
+  .service .comment:after {
+    left: -16px;
+    right: 0;
+    border-color: transparent #eee transparent transparent;
+
+  }
+  .service {
+  
+    overflow: hidden;
+  }
+ 

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
+    <title>多人聊天室</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="https://cdn.bootcss.com/socket.io/1.7.4/socket.io.min.js"></script>
+</head>
+
+<body id='TZA4S'>
+
+    <div id="loginbox">
+       <div class="login-con" align="center" id="login-main">
+            <img src="./content/head/login_title.png" alt="logo"  height="25" width="275" class="logo_title">
+            <input class="form-control input-lg" type="text" placeholder="请先输入你在聊天室的昵称" id="username" name="username"  autocomplete="off"/>
+            <button type="button" class="btn btn-info btn-lg btn-block login-btn" id="click-to-login">登录</button>
+            <button type="button" class="btn btn-info btn-lg btn-block headportrait-btn" id="head-btn">选择头像</button>
+            <div id="headportrait" class="headportrait-show"></div>
+            <div class="showHeadprotrait">
+                <img src="./content/head/2.jpg" alt="用户头像" srcset="" id="defaultHead" width="20%" height="20%">
+            </div>
+        </div>		
+        
+
+    </div>
+    <div id="chatbox" style="display:none;">
+        <div style="background:#3d3d3d;height: 28px; width: 100%;font-size:12px;">
+            <div style="line-height: 28px;color:#fff;">
+                <span class="title">Websocket多人聊天室</span>
+                <span style="float:right; margin-right:10px;">
+                    <span id="showusername"></span> |
+                    <a href="javascript:;" style="color:#fff;" onclick=" location.reload()">退出</a>
+                </span>
+            </div>
+        </div>
+        <div id="doc">
+            
+            <div id="chat">
+                <div id="message" class="message">
+                    <div id="onlinecount" style="background:#EFEFF4; font-size:12px; margin-top:10px; margin-left:10px; color:#666;">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input">
+                            <div class="items">
+                                   
+                                    <span  id="emoji"> <img src="./content/css/emoji.svg"/ alt="表情"></span>
+            
+                                    <div id="historyMsg"></div>
+                                    <div class="emojis-container"></div>
+                                    <div id="emojiWrapper"></div>
+                                </div>
+                                <textarea rows="4" cols="50" id="content" >
+                               </textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./client.js"></script>
+</body>
+
+</html>
